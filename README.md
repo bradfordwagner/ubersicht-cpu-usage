@@ -12,6 +12,7 @@ A simple CPU Usage widget for [Ubersicht](http://tracesof.net/uebersicht/) using
 
 - Download the [repository](https://github.com/dionmunk/ubersicht-cpu-usage/archive/master.zip).
 - Place the `cpu-usage.widget` folder in your Ubersicht extension folder.
+- Refresh Ubersicht.
 
 ## License
 
