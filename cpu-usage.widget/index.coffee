@@ -8,15 +8,21 @@ style: """
   // Align contents left or right
   widget-align = left
 
+  total-color = #c0c2c5
+  user-color = rgba(#81A1C1, 1)
+  system-color = rgba(#4C566A, 1)
+  idle-color =  #b7bbc3
+
   // Position this where you want
   top 7px
   right 160px
 
   // Statistics text settings
-  color #fff
-  font-family Helvetica Neue
-  background rgba(#000, .5)
-  padding 2px
+  color var(--pecan-fg-pecanclock)
+  font-family var(--pecan-font)
+  font-size var(--pecan-font-size)
+  background var(--pecan-bg-pecanclock)
+  padding 2px 2px 4px
   border-radius 5px
 
   .cpu-user
@@ -25,14 +31,13 @@ style: """
     padding: 0px 5px
 
   .container
-    width: 250px
+    width: 275px
     text-align: widget-align
     position: relative
     clear: both
 
   .widget-title
     text-align: widget-align
-    font-size 10px
     text-transform uppercase
     font-weight bold
 
@@ -41,7 +46,6 @@ style: """
     border-collapse collapse
 
   div
-    font-size: 13px
     font-weight: 300
     color: rgba(#fff, .9)
     text-shadow: 0 1px 0px rgba(#000, .7)
@@ -54,6 +58,8 @@ style: """
     font-weight bold
 
   .bar-container
+    display: flex
+    flex-wrap: nowrap
     width: 100%
     height: bar-height
     border-radius: bar-height
@@ -78,14 +84,18 @@ style: """
     else
       border-radius: 0 bar-height bar-height 0
 
-  .bar-inactive
-    background: rgba(#ccc, .5)
-
+  .total
+    color: total-color
+  .user
+    color: user-color
+  .sys
+    color: system-color
+  .bar-idle
+    background: idle-color
   .bar-sys
-    background: rgba(#b5d93f, 1)
-
+    background: system-color
   .bar-user
-    background: rgba(#df5077, 1)
+    background: user-color
 """
 
 
