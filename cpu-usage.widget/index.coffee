@@ -51,7 +51,6 @@ style: """
     padding: 0 15px 0 0
   .label
     padding: 0 15px 0 0
-    text-transform uppercase
     font-weight bold
 
   .bar-container
@@ -95,10 +94,9 @@ render: -> """
     <div class="cpu-user">
       <table class="stats-container">
         <tr>
-          <div class="label">CPU</div><div class="stat"><span class="total"></span></div>
+          <div class="label">cpu</div><div class="stat"><span class="total"></span></div>
           <div class="label">user</div><div class="stat"><span class="user"></span></div>
           <div class="label">sys</div><div class="stat"><span class="sys"></span></div>
-          <div class="label">idle</div><div class="stat"><span class="idle"></span></div>
         </tr>
       </table>
     </div>
