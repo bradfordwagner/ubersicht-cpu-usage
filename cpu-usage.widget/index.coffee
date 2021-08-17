@@ -25,7 +25,7 @@ style: """
     padding: 0px 5px
 
   .container
-    width: 375px
+    width: 250px
     text-align: widget-align
     position: relative
     clear: both
