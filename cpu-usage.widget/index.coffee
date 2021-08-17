@@ -20,7 +20,7 @@ style: """
   border-radius 5px
 
   .container
-    width: 300px
+    width: 600px
     text-align: widget-align
     position: relative
     clear: both
@@ -90,14 +90,9 @@ render: -> """
     <div class="widget-title">CPU</div>
     <table class="stats-container" width="100%">
       <tr>
-        <td class="stat"><span class="user"></span></td>
-        <td class="stat"><span class="sys"></span></td>
-        <td class="stat"><span class="idle"></span></td>
-      </tr>
-      <tr>
-        <td class="label">user</td>
-        <td class="label">sys</td>
-        <td class="label">idle</td>
+        <td class="label">user</td><td class="stat"><span class="user"></span></td>
+        <td class="label">sys</td><td class="stat"><span class="sys"></span></td>
+        <td class="label">idle</td><td class="stat"><span class="idle"></span></td>
       </tr>
     </table>
     <div class="bar-container">
