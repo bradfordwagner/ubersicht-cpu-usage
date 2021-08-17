@@ -17,11 +17,12 @@ style: """
   font-family Helvetica Neue
   background rgba(#000, .5)
   //padding 5px
-  //border-radius 5px
+  border-radius 5px
 
   .cpu-user
     display: flex
     flex-direction: row
+    padding: 0px 5px
 
   .container
     width: 600px
@@ -58,7 +59,6 @@ style: """
     float: widget-align
     clear: both
     background: rgba(#ccc, .5)
-    //position: absolute
 
   .bar
     height: bar-height
