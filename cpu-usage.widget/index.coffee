@@ -40,14 +40,17 @@ style: """
     width 100%
     border-collapse collapse
 
-  td
+  div
     font-size: 13px
     font-weight: 300
     color: rgba(#fff, .9)
     text-shadow: 0 1px 0px rgba(#000, .7)
     text-align: widget-align
 
+  .stat
+    padding: 0 15px 0 0
   .label
+    padding: 0 15px 0 0
     //font-size 8px
     text-transform uppercase
     font-weight bold
@@ -93,10 +96,10 @@ render: -> """
     <div class="cpu-user">
       <table class="stats-container">
         <tr>
-          <td class="label">CPU</td>
-          <td class="label">user</td><td class="stat"><span class="user"></span></td>
-          <td class="label">sys</td><td class="stat"><span class="sys"></span></td>
-          <td class="label">idle</td><td class="stat"><span class="idle"></span></td>
+          <div class="label">CPU</div>
+          <div class="label">user</div><div class="stat"><span class="user"></span></div>
+          <div class="label">sys</div><div class="stat"><span class="sys"></span></div>
+          <div class="label">idle</div><div class="stat"><span class="idle"></span></div>
         </tr>
       </table>
     </div>
