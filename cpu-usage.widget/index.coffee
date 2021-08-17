@@ -16,8 +16,8 @@ style: """
   color #fff
   font-family Helvetica Neue
   background rgba(#000, .5)
-  padding 5px
-  border-radius 5px
+  //padding 5px
+  //border-radius 5px
 
   .cpu-user
     display: flex
@@ -40,7 +40,7 @@ style: """
     border-collapse collapse
 
   td
-    font-size: 10px
+    font-size: 13px
     font-weight: 300
     color: rgba(#fff, .9)
     text-shadow: 0 1px 0px rgba(#000, .7)
