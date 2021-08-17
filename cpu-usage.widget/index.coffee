@@ -16,8 +16,12 @@ style: """
   color #fff
   font-family Helvetica Neue
   background rgba(#000, .5)
-  padding 10px 10px 15px
+  padding 5px
   border-radius 5px
+
+  .cpu-user
+    display: flex
+    flex-direction: row
 
   .container
     width: 600px
@@ -32,18 +36,18 @@ style: """
     font-weight bold
 
   .stats-container
-    margin-bottom 5px
+    width 100%
     border-collapse collapse
 
   td
-    font-size: 14px
+    font-size: 10px
     font-weight: 300
     color: rgba(#fff, .9)
     text-shadow: 0 1px 0px rgba(#000, .7)
     text-align: widget-align
 
   .label
-    font-size 8px
+    //font-size 8px
     text-transform uppercase
     font-weight bold
 
@@ -54,8 +58,7 @@ style: """
     float: widget-align
     clear: both
     background: rgba(#ccc, .5)
-    position: absolute
-    margin-bottom: 5px
+    //position: absolute
 
   .bar
     height: bar-height
@@ -87,14 +90,16 @@ style: """
 
 render: -> """
   <div class="container">
-    <div class="widget-title">CPU</div>
-    <table class="stats-container" width="100%">
-      <tr>
-        <td class="label">user</td><td class="stat"><span class="user"></span></td>
-        <td class="label">sys</td><td class="stat"><span class="sys"></span></td>
-        <td class="label">idle</td><td class="stat"><span class="idle"></span></td>
-      </tr>
-    </table>
+    <div class="cpu-user">
+      <table class="stats-container">
+        <tr>
+          <td class="label">CPU</td>
+          <td class="label">user</td><td class="stat"><span class="user"></span></td>
+          <td class="label">sys</td><td class="stat"><span class="sys"></span></td>
+          <td class="label">idle</td><td class="stat"><span class="idle"></span></td>
+        </tr>
+      </table>
+    </div>
     <div class="bar-container">
       <div class="bar bar-user"></div>
       <div class="bar bar-sys"></div>
